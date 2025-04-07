@@ -1,0 +1,428 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#navbar{
+    height: 60px;
+    width: 90%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(250, 218, 11);
+    margin: 10px auto;
+    border-radius: 20px;
+    z-index: 5;
+}
+
+ul{
+    display: flex;
+    float: right;
+}
+ul li{
+    list-style: none;
+    padding: 0px 25px;
+    line-height: 60px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 3px;
+}
+ul li a:hover{
+   border-top: 1px solid  rgba(244, 99, 9, 0.969);;
+   border-bottom: 1px solid  rgba(244, 99, 9, 0.969);;
+   
+}
+#checkbtn{
+    float: right;
+    display: "";
+    font-size: 25px;
+    color:  rgba(244, 99, 9, 0.969);
+    padding-right: 20px;
+    line-height: 60px; 
+    margin-left: 10px;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+@media(max-width:900px){
+    #checkbtn{
+         display: inline-block;
+      }
+      #navbar ul{
+        width: 180px;
+        height: 45vh;
+        background-color: rgba(244, 99, 9, 0.969);
+        position: absolute;
+        top: 60px;
+        left: -250px;
+        transition: all .5s;
+        border-radius: 20px 0px 5px 0px; 
+     }
+    #navbar ul{
+    display: flex;
+    flex-direction: column;  
+}
+ul li a:hover{
+   border-top: 1px solid  rgb(250, 218, 11) ;
+   border-bottom: 1px solid  rgb(250, 218, 11);
+}
+.button-nav{
+    float: right;
+}
+}
+@media(min-width:900px){
+ #checkbtn{
+    display: none;
+ }
+}
+/* button-nav */
+    .button-nav{
+     /* line-height: 60px; */
+     margin-left: 80px;
+     line-height: 60px;
+    }
+    .button-nav .btna{
+        background-color: red;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 2px 5px;
+    }
+    .button-nav .btna:hover{
+        background-color: transparent;
+        transition: all .3s ease-in-out;
+    }
+
+    .button-nav .btna a{
+        text-decoration: none;
+        color: white;
+    }
+    .button-nav .btna a:hover{
+        color:black ;
+        transition: all .3s ease-in-out;
+    }
+    .button-nav i{
+       color: gray;
+       cursor: pointer;
+    }
+ 
+    /* main container */
+#main{
+    width: 100%;
+    height: auto;
+    z-index: -10;
+    background-color:  rgb(240, 233, 203);
+}
+/* Slider-box 1*/
+.slider-box{ 
+    width: 100%;
+    height: 400px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+#slider{
+    width: 100%;
+    display: inline-flex;
+    transition: all 0.5s;
+  
+}
+#slider img{
+    width: 100%;
+    height: 400px;
+   
+}
+@media(max-width:600px){
+    .slider-box{
+        height: 250px;
+    }
+    #slider img{
+        height: 250px;
+    }
+}
+
+/* Menu part 1*/
+.slider-box1{ 
+    width: 100%;
+    height: 200px;
+    margin: 10px auto;
+    position: relative;
+    top: -25px;
+    overflow: hidden;
+    background-color: white;
+}
+.menu{
+    height: 30px;
+    width: 150px;
+    border: 1px solid gray;
+    margin: auto;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+}
+.menu a{
+   text-decoration: none;
+   line-height: 30px;
+   font-size: 20px;
+   color: rgb(255, 217, 0);
+   font-weight: 500;
+}
+
+
+/* slider-box1 */
+.slider-box1a{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.coffee,.single-product,.box-meals,.chicken,.burger,.pizza{
+    width: 15%;
+    height: auto;
+    text-align: center;
+}
+.coffee img,.single-product img,.box-meals img,.chicken img,.burger img,.pizza img{
+    width: 100%;
+    height: 100px;
+}
+.coffee p a,.single-product p a,.box-meals p a,.chicken p a,.burger p a,.pizza p a{
+  text-decoration: none;
+  color: black; 
+  line-height:40px;
+  font-weight: 500;
+}
+.coffee p a:hover,.single-product p a:hover,.box-meals p a:hover,.chicken p a:hover,.burger p a:hover,.pizza p a:hover{
+    border-bottom: 2px solid red;
+    transition: all 0.20s ease-out;
+}
+
+@media(max-width:1200px){
+    .coffee a,.single-product a,.box-meals a,.chicken a,.burger a,.pizza a{
+        font-size: 2vw;
+    } 
+}
+@media(max-width:600px){
+    .coffee a,.single-product a,.box-meals a,.chicken a,.burger a,.pizza a{
+        font-size: 2vw;
+    }
+}
+@media(max-width:400px){
+    .coffee a,.single-product a,.box-meals a,.chicken a,.burger a,.pizza a{
+        font-size: 7px;
+    }
+}
+
+/* Slider-box 2*/
+.slider-box2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.slider-box2 .box1,.box2,.box3{
+    width: 300px;
+    height: 150px;
+    box-shadow: 0px 2px 3px 2px rgba(173, 168, 168, 0.984);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.box1 img,.box2 img,.box3 img{
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+}
+/* Slider-box 3*/
+.slider-box3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.slider-box3 .box4{
+    width: 400px;
+    height: 150px;
+    box-shadow: 0px 2px 3px 1px rgba(173, 168, 168, 0.984);
+    border-radius: 5px;
+    margin-top: 30px; 
+    background: url(slider-box4.jpg) no-repeat center center/cover;
+}
+.slider-box3 .box5{
+    width: 400px;
+    height: 150px;
+    box-shadow: 0px 2px 3px 1px rgba(173, 168, 168, 0.984);
+    border-radius: 5px;
+    margin-top: 30px; 
+    background: url(slider-box5.jpg) no-repeat center center/cover;
+  
+}
+
+.btn1{
+    margin-top: 120px;
+    margin-left: 100px;
+    background-color: red;
+    border-radius: 10px;
+    border: red;
+    width: 150px;
+    height: 20px;
+    box-shadow: 2px 2px 2px 2px red;
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.btn2{
+    margin-top: 120px;
+    margin-left: 250px;
+    background-color: red;
+    border-radius: 10px;
+    border: red;
+    width: 80px;
+    height: 20px;
+    box-shadow: 0px 2px 2px 2px red;
+}
+.btn2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+/* Slider-box 4*/
+.slider-box4{
+width: 100%;
+height: 250px;
+margin-top: 50px;
+
+display: flex;
+}
+.box6{
+    width:60%;
+    height: 230px;
+   
+    border-radius: 0px 110px 110px 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: url(slider-box6.jpg)no-repeat center center/cover;
+}
+.box7{
+    width:30%;
+    height: 230px;
+   
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.box7 .video{
+    width: 100%;
+   height: 230px;
+}
+
+@media(max-width:600px){
+    .box6{
+        width: 90%;
+    }
+    .box7{
+        display: none;
+    }
+}
+/* Slider-box 5*/
+.slider-box5{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.259);
+}
+
+/* Slider-box 6*/
+.slider-box6{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+.box8,.box9,.box10{
+    width: 25%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .box8 ul,.box9 ul,.box10 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box8 i,.box9 i,.box10 i{
+    margin-top: 10px;
+    background-color: rgb(242, 175, 18);
+    font-size: 30px;
+    border: 1px solid red;
+    border-radius: 20px 20px 20px 20px; 
+}
+.box8 a,.box9 a,.box10 a{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.box8 a:hover,.box9 a:hover,.box10 a:hover{
+    text-decoration: underline;
+}
+
+/* Slider-box 7*/
+.slider-box7{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.box11,.box12,.box13{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box11 p,.box12 p,.box13 p{
+    font-size: 1.7vw;
+   text-decoration: underline;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+.box11 a,.box12 a,.box13 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+    margin-top: 5px;
+}
+.box11 a:hover,.box12 a:hover,.box13 a:hover{
+    text-decoration: underline;
+}
+@media(max-width:600px){
+    .slider-box5{
+       height: 250px; 
+    } 
+    .box8 a,.box9 a,.box10 a{
+        font-size: 2vw;
+    }
+    .box11 p,.box12 p,.box13 p{
+        font-size: 2.5vw;
+    }
+    .box11 a,.box12 a,.box13 a{
+        font-size: 2vw;
+    }
+}
+

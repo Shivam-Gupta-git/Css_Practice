@@ -1,0 +1,314 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#navbar{
+    background-color: rgb(216, 66, 66);
+    width: 100%;
+    height: 52px;
+    position: sticky;
+    top: 0;
+  z-index: 9;
+   
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+#navbar ul li{
+float:left ;
+width: 200px;
+border: 1px solid rgb(57, 50, 50);
+text-align: center;
+line-height: 50px;
+position: relative;
+
+}
+#navbar ul li a{
+    
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(15, 236, 129);
+    display: block;
+}
+#navbar ul li a:hover{
+    background-color: rgb(243, 107, 137);
+    color:black;
+}
+#navbar ul ul {
+    display: none;
+    border: none;
+    background-color: rgb(216, 66, 66);
+   position: absolute;
+}
+
+#navbar ul li:hover > ul {
+    display: block;
+}
+#navbar ul ul ul{
+left: 100%;
+top: 0px;
+}
+
+@media(max-width: 445px) {
+
+#navbar ul { 
+display: flex;
+flex-wrap: nowrap;
+
+}
+}
+ /* home section */
+
+.home{
+    
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(72, 211, 157)
+   
+}
+/* blocke section */
+.blocke{
+    margin: 3%;
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    grid-template-rows: repeat(auto-fit,minmax,250px,1fr);
+    grid-gap:30px;
+   justify-content: space-evenly;
+ 
+  /* blocke box1 section */
+}
+.box1{
+    height: 55vh;
+    width: 43vw;
+
+     text-align: start;
+  
+}
+
+.box1 .latter1{
+    color: rgb(17, 39, 54);
+    position: relative;
+    top: 60px;
+   
+}
+.box1 .latter2{
+    color: white;
+    position: relative;
+    top: 60px;
+    font-size: 2.5rem;
+}
+.box1 .latter3{
+    color: rgb(46, 119, 146);
+    position: relative;
+    top: 60px;
+    font-size: 2.5rem;
+}
+p{
+    color: rgb(113, 6, 55);
+    position: relative;
+    top: 60px;
+}
+
+/* Using Media Quree */
+
+@media(max-width:600px){
+.box1{
+    height: 100vh; 
+   width: 95vw;
+}
+.box2{
+    height: 100vh;
+    width: 95vw;
+}
+.box1 .latter1{
+    position: relative;
+    top: 20px;
+}
+.box1 .latter2{
+    font-size: 1.5rem;
+    position: relative;
+    top: 20px;
+}
+.box1 .latter3{
+    font-size: 1.5rem;
+    position: relative;
+    top: 20px;
+}
+p{
+    position: relative;
+    top: 20px;
+    font-size: 0.7rem;
+}
+.home{
+    height: 100vh;
+}
+.blocke{ 
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+} 
+}
+
+/* block box2 section */
+.box2{
+    height: 55vh;
+    width: 43vw;
+
+    font-size: 1rem;
+    display: flex;
+}
+
+.boxa{
+    height: 25vh;
+    width: 14vw;
+
+    margin: 0px;
+    border-radius: 95px;
+}
+.boxa img{
+    height: 25vh;
+    width: 14vw;
+    border-radius: 95px;
+}
+.boxb{
+    height: 20vh;
+    width: 11vw;
+
+    margin: 0px;
+    border-radius: 95px;
+    margin: 20px;
+}
+.boxb img{
+    height: 20vh;
+    width: 11vw;
+    border-radius: 95px;
+}
+.boxc{
+    height: 20vh;
+    width: 11vw;
+
+    margin: 0px;
+    border-radius: 95px;
+    margin-top: 200px;
+    margin-left: -200px;
+}
+.boxc img{
+    height: 20vh;
+    width: 11vw;
+    border-radius: 95px;
+}
+.boxd{
+    height: 22vh;
+    width: 12vw;
+
+    margin: 0px;
+    border-radius: 95px;
+    margin-top: 140px;
+    margin-left: -0px;
+}
+.boxd img{
+    height: 22vh;
+    width: 12vw;
+    border-radius: 95px;
+}
+ .boxe{  
+    height: 9vh;
+    width: 5vw;
+
+    margin: 0px;
+    border-radius: 95px;
+    margin-top: 250px;
+    margin-left: -450px;
+ } 
+.boxe img{
+    height: 9vh;
+    width: 5vw;
+    border-radius: 95px;
+}
+ 
+/* media quare */
+
+@media(max-width:600px){
+    .boxa{
+        height: 22vh;
+        width: 30vw;
+    }
+    .boxa img{
+        height: 22vh;
+        width: 30vw;
+    }
+    .boxb{
+        height: 15vh;
+        width: 22vw;
+        margin: 15px;
+    }
+    .boxb img{
+        height: 15vh;
+        width: 22vw;
+    }
+    .boxc{
+        height: 15vh;
+        width: 22vw;
+        margin-top: 120px;
+         margin-left: -110px;
+       
+    }
+    .boxc img{
+        height: 15vh;
+        width: 22vw;
+    }
+    .boxd{
+        height: 15vh;
+        width: 22vw;
+        margin-top: 70px;
+         margin-left: -5px;
+       
+    }
+    .boxd img{
+        height: 15vh;
+        width: 22vw;
+    }
+    .boxe{
+        height: 7vh;
+        width: 10vw;
+        margin-top: 160px;
+         margin-left: -270px;
+       
+    }
+    .boxe img{
+        height: 7vh;
+        width: 10vw;
+    }
+
+}
+
+/* button secton */
+.button{
+
+    display: flex;
+    margin: 90px;
+}
+ .btn1{
+    list-style: none;
+   padding: 15px;
+}
+.btn1 a{
+    color: black;
+    text-decoration: none;
+     background-color: white;
+    border-radius: 10px;
+     padding: 5px;
+}
+.btn1 a:hover{
+    background-color: rgb(16, 96, 105);
+}
+
+

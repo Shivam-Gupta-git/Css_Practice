@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="choose1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Choose1</title>
+</head>
+<body>
+    <!-- main-box -->
+   <div class="main-box">
+    <!-- box1 -->
+    <div class="box1">
+        <div class="product">
+            <div class="box1a">
+                <img src="puma12a.avif" alt=""
+                onclick="clickme(this)">
+            </div>
+            <div class="box1a">
+                <img src="puma12b.avif" alt=""
+                onclick="clickme(this)">
+            </div>
+            <div class="box1a">
+                <img src="puma12c.avif" alt=""
+                onclick="clickme(this)">
+            </div>
+            <div class="box1a">
+                <img src="puma12f.avif" alt=""
+                onclick="clickme(this)">
+            </div>
+            <div class="box1a">
+                <img src="puma12e.avif" alt=""
+                onclick="clickme(this)">
+            </div>
+        </div>
+        <div class="preview">
+            <img src="puma12d.avif" 
+            id="imagebox" alt="">
+        </div>
+    </div>
+    <!-- box2 -->
+    <div class="box2">
+        <!-- box2a -->
+        <div class="box2a">
+            <p class="brand">Brand:Puma</p>
+            <p class="puma"> King Ultimate FG/AG Unisex Football Boots</p>
+            <!-- box2ab -->
+            <div class="box2ab">
+                <div class="box2ab-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-stroke"></i>
+            </div>
+            <h1 class="prise1">-15% <span class="prise2"><i class="fas fa-inr"></i></span><span class="prise3">8499</span></h1>
+            <p class="prise4">M.R.P: <span class="prise5"><i class="fas fa-inr"><del>7,999</del></i></span></p>
+            
+             </div><hr>
+             <!-- box2ac -->
+             <div class="box2ac">
+                <div class="offers">
+                    <div class="circle"><i class="fas fa-percentage"></i></div>
+                    <p class="off">Offers</p>
+                </div>
+             </div>
+             <!-- box2ad -->
+             <div class="box2ad">
+                <div class="no-cost-emi">
+                    <h1>No Cost EMI</h1>
+                </div>
+                <div class="partner-offer">
+                    <h1>Partner Offers</h1>
+                </div>
+             </div>
+             <!-- box2ae -->
+             <div class="box2ae">
+                <h1>SIZE</h1>
+             </div>
+             <!-- box2af -->
+             <div class="box2af">
+                <div class="box2af1"><p>UK6</p></div>
+                <div class="box2af1"><p>UK7</p></div>
+                <div class="box2af1">UK8</div>
+                <div class="box2af1">UK9</div>
+
+             </div>
+        </div>
+        <!-- box2b -->
+        <div class="box2b">
+            <!-- box2ba -->
+            <div class="box2ba">
+                <div class="prise1-box">
+                    <i class="fas fa-inr"></i>
+                     <div class="prise1">6,799</div>
+                </div>
+                <p><b>Quantity:</b><input type="text" value="1"></p>
+                <div class="add-to-cart-but-box">
+                 <button class="add-to-cart"><a href="#">Add to Cart</a></button>
+                 <button class="buy-now"><a href="#">Buy Now</a></button>
+                </div>
+                <div class="secure"><a href="#"><i class="fas fa-lock"></i> Secure transaction</a>
+                </div>
+                <div class="add-to-gift-wise-list">
+                   <div class="add-gift">
+                    <input type="checkbox"><p>Add gift options</p>
+                   </div> 
+                   <div class="add-wish-list"><a href="#">Add to Wish List</a></div> 
+                </div><hr>
+             <div class="small-box1">
+                <div class="small-box1a">
+                    <a href="#"><img src="return.png" alt="">Return & Exchange</a>
+                </div>
+                <div class="small-box1a">
+                    <a href="#"><img src="pag.png" alt="">Pay on Delivery</a>
+                </div>
+                <div class="small-box1a">
+                    <a href="#"><img src="free-delivery.png" alt="">Free Delivery</a>
+                </div>
+                <div class="small-box1a">
+                    <a href="#"><img src="top-brand.png" alt="">Top Brand</a>
+                </div>
+             </div>
+             
+
+
+            </div>
+        </div>
+    </div>
+  
+</div> 
+
+
+
+
+
+
+   <script>
+    function clickme(smallImg){
+        var fullImg = document.getElementById("imagebox");
+        fullImg.src = smallImg.src;
+    }
+</script>
+
+</body>
+</html>
